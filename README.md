@@ -4,7 +4,7 @@ Here is Deploy Ling:-
 [https://jolly-biscochitos-7d2b73.netlify.app/]
 
 Features:-
-1. Home Page, Hard Code ,With search bar
+1. Home Page, Hard Code ,With search bar using(debounce)
 2. Login/Signup Page User authantication. 
 3. Using Api Key for Fetching details about recipe 
 4. Random recipe div , added Menu div
