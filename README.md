@@ -1,7 +1,6 @@
 # Welcome to Foodies-App
 ## Solo Project
-Here is Deploy Ling:-
-[https://jolly-biscochitos-7d2b73.netlify.app/]
+
 
 Features:-
 1. Home Page, Hard Code ,With search bar using(debounce)
