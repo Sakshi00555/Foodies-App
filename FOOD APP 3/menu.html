@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<body>
+    <div id="navbar">
+        <div><img src="https://www.themealdb.com/images/logo-small.png"/></div>
+        <div><a href="menu.html">Menu</a></div>
+        
+        
+        <div><a href="random_recipe.html">Get receipe by day</a></div>
+        <div><a href="index.html">Home</a></div>
+        <div  ><a  href="login.html">Login</a></div>
+    </div>
+    <div id="by-day">
+
+    </div>
+    
+</body>
+</html>
+<script src="menu.js"></script>
+<script type="module">
+    import navbar from './components/navbar.js'
+    document.getElementById("navbar").innerHTML=navbar();
+    //console.log(navbar)
+    
+
+   
+   
+
+    
+
+
+</script>

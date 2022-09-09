@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="random.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+
+
+    <div id="navbar">
+        <div><img src="https://www.themealdb.com/images/logo-small.png"/></div>
+        <div><a href="menu.html">Menu</a></div>
+        
+        
+        <div><a href="random_recipe.html">Get receipe by day</a></div>
+        <div><a href="index.html">Home</a></div>
+        <div  ><a  href="login.html">Login</a></div>
+    </div>
+
+    <div>Login</div>
+    <form>
+        <label  data-end="*" class="label">Email Address </label>
+        <input type="email" placeholder="Email" name="" id="email">
+        <br>
+        <label data-end="*" class="label">Password </label>
+        <input type="password" placeholder="Password" name="" id="password">
+        
+        <input type="submit" value="LOGIN" id="button">
+        <h3 class="yet">No account yet?</h3>
+        <p>Create An Account? <a href="./signup.html"> Signup </a></p>
+    </form>
+
+    
+    
+</body>
+</html>
+
+<script type="module">
+    import navbar from './components/navbar.js'
+    document.getElementById("navbar").innerHTML=navbar();
+    //console.log(navbar)
+
+
+
+    
+
+   
+   
+
+    
+
+
+</script>
+<script>
+    let form = document.querySelector("form");
+    let LSData=JSON.parse(localStorage.getItem("userData"));
+
+    function signin(formData,LSData) {
+     if (LSData == null){
+         alert("User Doesn't Exist. Please signup")
+     }else if(LSData.email != formData.email || LSData.password != formData.password){
+         alert("Please Enter Valid Email ID or Password");
+     }else{
+         alert("Sign in Successful.");
+         localStorage.setItem("signin", JSON.stringify(LSData));
+         window.location.href="index.html";
+         //document.getElementById("login").innerText=LSData.name
+         console.log(LSData.name)
+         
+     }
+    }
+    form.addEventListener("submit",function(event) {
+        event.preventDefault();
+      let data={
+          email:form.email.value,
+          password: form.password.value,
+      }
+      signin(data,LSData);
+      
+    })
+    
+
+</script>

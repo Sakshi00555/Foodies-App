@@ -1,0 +1,45 @@
+body{
+    padding: 0px;
+    background-image: url("https://images6.alphacoders.com/102/1024930.jpg");
+    background-size: cover;
+    
+    
+    
+    resize: both;
+
+}
+#random>div{
+    background-color:black;
+    width: 90%;
+    opacity: 95%;
+    font-size: 20px;
+    display: flex;
+    border: 6px double yellow;
+    gap: 50px;
+    color: red;
+
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    margin:40px auto;
+
+}
+#random>div>div{
+   
+    width: 40%;
+
+}
+#random>div>div>img{
+    width: 50%;
+    margin: auto;
+}
+#random>div>div:nth-child(2){
+    border: 6px double yellow;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+#random>div>div:nth-child(3){
+    /* border: 6px double yellow; */
+    padding: 20px;
+}
